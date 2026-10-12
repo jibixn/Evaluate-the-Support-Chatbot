@@ -239,7 +239,7 @@ file_path = "data/labeled_conversations.csv"
 
 
 import csv
-from collections import Counter
+
 
 file_path = "data/labeled_conversations.csv"
 
@@ -367,7 +367,7 @@ with open(file_path_write, mode="w", newline="") as csv_file:
         score = round(score)
 
         #score rounded like this to ensure that evaluation is positive above 7.5 and not strictly 8.
-        total_score += score
+        # total_score += score
 
         severity = "pass" if score >=8 else severity_based_on_score[score]
 
